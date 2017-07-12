@@ -28,6 +28,12 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
+[img1]: ./test_images/00035.ppm
+[img2]: ./test_images/00053.ppm
+[img3]: ./test_images/00057.ppm
+[img4]: ./test_images/00092.ppm
+[img5]: ./test_images/00134.ppm
+
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
