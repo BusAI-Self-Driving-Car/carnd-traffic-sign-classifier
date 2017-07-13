@@ -52,30 +52,15 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
 ### Data Preprocessing
 
-1. Data Augumentation
-
-    1) Techniques
-    
-    
-    2) Pipeline
-
-    3) Motivation
-    
-        * The difference between the original data set and the augmented data set is the following ...
-
-        * why you decided to generate additional data
-
-        * how you generated the data, and provide example images of the additional data.
-
-        * Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.
-
-2. Image Preprocessing
+1. Image Preprocessing
 
     1) Techniques
 
-        * grayscale
-        * normalization
-        * brightening
+        * Normalize
+        * Crop
+        * Sharpen
+        * Obtain the image's contrast
+        * Histogram-equalize
 
     2) Pipeline
 
@@ -95,10 +80,32 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
         ![alt text][image3]
 
+    3) Conclusion
+
+2. Data Augumentation
+
+    1) Techniques
+
+        * perpective (view-point)
+        * scale
+        * transplant
+        * rotation
+    
+    2) Pipeline
+
+    3) Conclusion
+    
+        * The difference between the original data set and the augmented data set is the following ...
+
+        * why you decided to generate additional data
+
+        * how you generated the data, and provide example images of the additional data.
+
+        * Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.
+
 ### Design and Test a Model Architecture
 
-
-2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+1. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
     I start with the LeNet-5 implementation shown in the classroom at the end of the CNN lesson which is a solid starting point. I only need to change the number of classes and possibly the preprocessing.
 
@@ -114,11 +121,11 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
     | Fully connected		| etc.        									|
     | Softmax				| etc.        									|
 
-3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+2. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
     To train the model, I used an ....
 
-4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+3. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
     My final model results were:
     * training set accuracy of ?
@@ -136,7 +143,6 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
     * What architecture was chosen?
     * Why did you believe it would be relevant to the traffic sign application?
     * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
 
 ### Test a Model on New Images
 
@@ -178,13 +184,11 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
     | .04	      			| Bumpy Road					 				|
     | .01				    | Slippery Road      							|
 
-
     For the second image ...
 
 ### (Optional) Visualizing the Neural Network
 
 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
-
 
 ### Conclusion
 
