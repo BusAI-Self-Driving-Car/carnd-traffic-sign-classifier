@@ -34,9 +34,9 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
 ### Data Set Summary & Exploration
 
-1. Tools
+1. Summary
 
-    I used the pandas library to calculate summary statistics of the traffic signs data set:
+    I use the python built-in functions to calculate summary statistics of the traffic signs data set:
 
     * The size of training set is 34799.
     * The size of the validation set is 4410.
@@ -44,25 +44,42 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
     * The shape of a traffic sign image is (32, 32, 3)
     * The number of unique classes/labels in the data set is 43.
 
-2. Include an exploratory visualization of the dataset.
+2. Exploratory visualization of the dataset.
 
     Here is an exploratory visualization of the data set. It is a bar chart showing how the training data distributed.
 
     ![alt text][img1]
 
-### Design and Test a Model Architecture
+### Data Preprocessing
 
-1. Preprocessing the image data.
+1. Data Augumentation
 
-    1) Preprocessing Techniques
+    1) Techniques
+    
+    
+    2) Pipeline
 
-        * converting to grayscale
+    3) Motivation
+    
+        * The difference between the original data set and the augmented data set is the following ...
+
+        * why you decided to generate additional data
+
+        * how you generated the data, and provide example images of the additional data.
+
+        * Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.
+
+2. Image Preprocessing
+
+    1) Techniques
+
+        * grayscale
         * normalization
-        * augumented data
+        * brightening
 
     2) Pipeline
 
-        - As a first step, I decided to convert the images to grayscale because ...
+        * As a first step, I decided to convert the images to grayscale because ...
 
         Here is an example of a traffic sign image before and after grayscaling.
 
@@ -78,13 +95,7 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
         ![alt text][image3]
 
-        - The difference between the original data set and the augmented data set is the following ...
-
-        - why you decided to generate additional data
-
-        * how you generated the data, and provide example images of the additional data.
-
-        * Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.
+### Design and Test a Model Architecture
 
 
 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
