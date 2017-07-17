@@ -56,29 +56,17 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
     1) Techniques
 
+        * Grayscale
         * Normalize
-        * Crop
-        * Sharpen
-        * Obtain the image's contrast
         * Histogram-equalize
 
     2) Pipeline
 
-        * As a first step, I decided to convert the images to grayscale because ...
+        * As a first step, I decided to convert the images to grayscale because color here is not a key effective feature for the traffic sign classification.
 
-        Here is an example of a traffic sign image before and after grayscaling.
+        * As a second step, I normalized the image data because it evenly considers the effects of all the features.
 
-        ![alt text][image2]
-
-        - As a last step, I normalized the image data because ...
-
-        I decided to generate additional data because ...
-
-        To add more data to the the data set, I used the following techniques because ...
-
-        Here is an example of an original image and an augmented image:
-
-        ![alt text][image3]
+        * As the last step, I do the histogram-equalize because it adjusts image intensities to enhance contrast which highlights the features.
 
     3) Conclusion
 
@@ -86,22 +74,23 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
     1) Techniques
 
-        * perpective (view-point)
-        * scale
-        * transplant
         * rotation
+        * transplant
+        * brightness
     
     2) Pipeline
 
+        I decided to generate additional data because this makes it unlikely to happen over-fitting.
+
+        To add more data to the the data set, I used the above techniques because the generated images can be distinguished and keep the key features.
+
     3) Conclusion
-    
-        * The difference between the original data set and the augmented data set is the following ...
 
-        * why you decided to generate additional data
+        * The difference between the original data set and the augmented data set is that
 
-        * how you generated the data, and provide example images of the additional data.
+            the augemented images are all transformed with the preprocessing techniques indtroduced in 1) and
 
-        * Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.
+            the new dataset is way bigger than the original by transplanting, rotating and brightening the original images.
 
 ### Design and Test a Model Architecture
 
