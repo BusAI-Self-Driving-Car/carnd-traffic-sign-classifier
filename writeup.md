@@ -14,11 +14,11 @@ The goals / steps of this project are the following:
 
 [image1]: ./writeup/distribution.png "Distribution"
 
-[image4]: ./Germam_traffic_signs/11.jpg "Traffic Sign 1"
-[image5]: ./Germam_traffic_signs/13.jpg "Traffic Sign 2"
-[image6]: ./Germam_traffic_signs/20.jpg "Traffic Sign 3"
-[image7]: ./Germam_traffic_signs/25.jpg "Traffic Sign 4"
-[image8]: ./Germam_traffic_signs/29.jpg "Traffic Sign 5"
+[image4]: ./German_traffic_signs/11.jpg "Traffic Sign 1"
+[image5]: ./German_traffic_signs/13.jpg "Traffic Sign 2"
+[image6]: ./German_traffic_signs/20.jpg "Traffic Sign 3"
+[image7]: ./German_traffic_signs/25.jpg "Traffic Sign 4"
+[image8]: ./German_traffic_signs/29.jpg "Traffic Sign 5"
 
 
 ### Code
@@ -121,14 +121,7 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
 ### Test a Model on New Images
 
-1. Choose five German traffic signs found on the web and provide them in the report.
-
-    Here are five German traffic signs that I found on the web:
-
-    ![alt text][image4] ![alt text][image5] ![alt text][image6]
-    ![alt text][image7] ![alt text][image8]
-
-2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+1. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
     Here are the results of the prediction:
 
@@ -143,7 +136,7 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
     The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
 
-3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction.
+2. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction.
 
     For the first image, the model is relatively sure that this is a "Dangerous curve to the right" sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
