@@ -14,11 +14,11 @@ The goals / steps of this project are the following:
 
 [image1]: ./writeup/distribution.png "Distribution"
 
-[image4]: ./Germam_traffic_signs/11.png "Traffic Sign 1"
-[image5]: ./Germam_traffic_signs/13.png "Traffic Sign 2"
-[image6]: ./Germam_traffic_signs/20.png "Traffic Sign 3"
-[image7]: ./Germam_traffic_signs/25.png "Traffic Sign 4"
-[image8]: ./Germam_traffic_signs/29.png "Traffic Sign 5"
+[image4]: ./Germam_traffic_signs/11.jpg "Traffic Sign 1"
+[image5]: ./Germam_traffic_signs/13.jpg "Traffic Sign 2"
+[image6]: ./Germam_traffic_signs/20.jpg "Traffic Sign 3"
+[image7]: ./Germam_traffic_signs/25.jpg "Traffic Sign 4"
+[image8]: ./Germam_traffic_signs/29.jpg "Traffic Sign 5"
 
 
 ### Code
@@ -115,7 +115,7 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
 3. Result Analysis
     My final model results were:
-    * training set accuracy of 0.963
+    * training set accuracy of 0.999
     * validation set accuracy of 0.963
     * test set accuracy of 0.940
 
