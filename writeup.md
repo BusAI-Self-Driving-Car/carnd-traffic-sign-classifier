@@ -145,17 +145,29 @@ Here is a link to my [project code](https://github.com/xpharry/CarND-Traffic-Sig
 
 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction.
 
-    For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+    For the first image, the model is relatively sure that this is a "Dangerous curve to the right" sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
     | Probability         	|     Prediction	        					|
     |:---------------------:|:---------------------------------------------:|
-    | .60         			| Stop sign   									|
-    | .20     				| U-turn 										|
-    | .05					| Yield											|
-    | .04	      			| Bumpy Road					 				|
-    | .01				    | Slippery Road      							|
+    | .90         			| Dangerous curve to the right					|
+    | .07     				| Children crossing 							|
+    | .05					| End of no passing								|
+    | .01	      			| End of all speed and passing limits   		|
+    | .00				    | Slippery Road      							|
 
-    For the second image ...
+    For the second, fourth and fifth images, the model is confident and accurate that they are "Road work", "Yeild" and "Right-of-way at the next intersection" with almost 100% probability respectively.
+
+    The only exception is when it comes to the third image, it is relatively confident with a wrong label which should be "Bicycles crossing".
+
+    | Probability         	|     Prediction	        					|
+    |:---------------------:|:---------------------------------------------:|
+    | .70         			| No entry					                    |
+    | .15     				| End of speed limit (80 km/h)  				|
+    | .10					| Turn left ahead								|
+    | .03	      			| End of no passing                       		|
+    | .02				    | Slippery Road      							|
+
+    I guess the biggest reason it goes wrong is that the image is quite askew.
 
 ### (Optional) Visualizing the Neural Network
 
